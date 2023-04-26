@@ -147,13 +147,11 @@ button {
   background-color: var(--color-neutral-verydarkviolet);
 }
 button:hover {
-  background-color: var(--color-primary-lineargradient);
-  color: var(--color-neutral-verydarkviolet);
+  background-color: hsl(0, 0%, 6%);
   border: 5px solid hsla(0, 100%, 36%, 0.695);
 }
 button:focus {
-  background-color: var(--color-primary-lineargradient);
-  color: var(--color-neutral-verydarkviolet);
+  background-color: hsl(0, 0%, 6%);
   border: 5px solid hsla(115, 100%, 36%, 0.695);
 }
 .error {
