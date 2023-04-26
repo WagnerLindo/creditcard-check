@@ -11,13 +11,13 @@ img {
   max-width: 100%;
 }
 :root {
-  --color-primary-lineargradient: hsl(249, 99%, 64%);
+  --color-primary-lineargradient: hsla(249, 65%, 50%, 0.909);
   --color-primary-lg2: hsl(278, 94%, 30%);
   --color-red-error: hsl(0, 100%, 66%);
   --color-neutral-white: hsl(0, 0%, 100%);
   --color-neutral-lightviolet: hsl(270, 3%, 87%);
   --color-neutral-darkviolet: hsl(279, 6%, 55%);
-  --color-neutral-verydarkviolet: hsl(278, 68%, 11%);
+  --color-neutral-verydarkviolet: hsl(278, 71%, 15%);
 }
 body {
   font-family: "Space Grotesk", sans-serif;
@@ -136,6 +136,7 @@ input {
 }
 button {
   height: 60px;
+  cursor: pointer;
   text-align: center;
   border: 0;
   color: var(--color-neutral-white);
@@ -144,6 +145,19 @@ button {
   letter-spacing: 2px;
   border-radius: 8px;
   background-color: var(--color-neutral-verydarkviolet);
+}
+button:hover {
+  background-color: var(--color-primary-lineargradient);
+  color: var(--color-neutral-verydarkviolet);
+  border: 5px solid hsla(0, 100%, 36%, 0.695);
+}
+button:focus {
+  background-color: var(--color-primary-lineargradient);
+  color: var(--color-neutral-verydarkviolet);
+  border: 5px solid hsla(115, 100%, 36%, 0.695);
+}
+.error {
+  color: orangered;
 }
 @media (min-width: 1024px) {
   .formulario {
@@ -183,7 +197,6 @@ button {
   }
   .formcontainer {
     max-width: 375px;
-    height: 375px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
